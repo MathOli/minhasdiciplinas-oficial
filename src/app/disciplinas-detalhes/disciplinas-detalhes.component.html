@@ -1,0 +1,19 @@
+<div class="container" style="width: 555px;">
+
+<h2 class="text-center"> {{ciclo.title}}</h2>
+<a [routerLink]="['/disciplinas']">
+<span class="material-icons" >
+arrow_back
+</span>
+</a>
+<h3 class="text-center">Detalhes</h3>
+
+<h4 class="text-center">Emenda</h4>
+<span class="text-center">{{ciclo.ementa}}</span>
+<h4 class="text-center" style="margin-top: 10px">Objetivo</h4>
+<span class="text-center">{{ciclo.objetivo}}</span>
+<h4 class="text-center"  style="margin-top: 10px">Notas</h4>
+<span class="text-center">Felipe: {{ciclo.notaf}}</span>
+<br>
+<span class="text-center">Matheus: {{ciclo.notam}}</span>
+<div>

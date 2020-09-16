@@ -1,0 +1,11 @@
+<div class="container text-center">
+<div class="ciclo1">
+ 
+<div *ngFor="let ciclo of ciclos; index as i">
+   <h2 *ngIf="(i > 0 && ciclo.ciclo != ciclos[i - 1].ciclo) || i == 0 "> 
+     {{ciclo.ciclo}}º Ciclo</h2>
+  <a [routerLink] = "['/disciplinas',i]">
+    {{ciclo.title}}
+  </a>
+</div>
+</div>

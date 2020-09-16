@@ -1,0 +1,64 @@
+h2{
+  background-color: rgba(0, 0, 128, 0.5);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color:black;
+}
+.ciclo1,.ciclo2,.ciclo3,.ciclo4,.ciclo5,.ciclo6{
+  background-color: rgba(4, 60, 124, 0.562);
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin: 2px;
+}
+
+.ciclo1{
+  grid-area: ciclo1
+}
+
+.ciclo2{
+  grid-area: ciclo2
+}
+
+.ciclo3{
+  grid-area: ciclo3
+}
+
+.ciclo4{
+  grid-area: ciclo4
+}
+
+.ciclo5{
+  grid-area: ciclo5
+}
+
+.ciclo6{
+  grid-area: ciclo6
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "ciclo1 ciclo2 ciclo3"
+    "ciclo4 ciclo5 ciclo6";
+}
+
+@media screen and (max-width: 1200px){
+  .container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "ciclo1 ciclo2" 
+    "ciclo3 ciclo4" 
+    "ciclo5 ciclo6";
+  }
+}
